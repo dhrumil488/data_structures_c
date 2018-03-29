@@ -105,6 +105,20 @@ node* delete_list(node* head) {
     return temp;
 }
 
+node* reverse_list(node* prev, node* cur, node* next) {
+    if(next) {
+        node* temp;
+        temp = reverse_list(cur, next, next->next);
+        cur->next = prev;
+        return temp;
+    } else {
+        printf("In else consition!\n");
+        printf("cur data::::%d", cur->data);
+        cur->next = prev;
+        return cur;
+    }
+}
+
 void display(node* head){
     node* temp = head;
     while(temp){

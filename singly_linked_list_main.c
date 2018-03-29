@@ -55,6 +55,15 @@ int main() {
             case 8:
                 break;
             case 9:
+                if(head) {
+                    
+                    head = reverse_list(NULL, head, head->next);
+                    
+                
+                    
+                } else {
+                    printf("List is empty!\n");
+                }
                 break;
             case 10:
                 display(head);
