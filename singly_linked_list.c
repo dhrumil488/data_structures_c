@@ -53,6 +53,49 @@ node* insert_at_pos(node* head, int value, int pos_data) {
     return head;
 }
 
+node* delete_at_begin(node* head) {
+    if(head) {
+        node* temp = head;
+        head = head->next;
+        free(temp);
+    } else {
+        printf("List is empty!\n");
+    }
+    return head;
+}
+
+node* delete_at_end(node* head) {
+    if(head) {
+        node* temp = head;
+        while(temp->next->next){
+            temp = temp->next;
+        }
+        free(temp->next);
+        temp->next = NULL;
+    } else {
+        printf("List is empty!\n");
+    }
+    return head;
+}
+
+node* delete_at_pos(node* head, int pos_data) {
+    if(head) {
+        node* temp = head;
+        while(temp && temp->next->data == pos_data) {
+            temp = temp->next;
+        }
+        if(temp) {
+            temp->next = temp->next->next;
+            free(temp->next);
+        } else {
+            printf("Node not found!\n");
+        }
+    } else {
+        printf("List is empty!\n");
+    }
+    return head;
+}
+
 node* delete_list(node* head) {
     node* temp = head;
     while(temp){

@@ -39,10 +39,15 @@ int main() {
                 head = insert_at_pos(head, data, pos_data);
                 break;
             case 4:
+                head = delete_at_begin(head);
                 break;
             case 5:
+                head = delete_at_end(head);
                 break;
             case 6:
+                printf("Enter the data of node which is to be deleted:");
+                scanf("%d", &pos_data);
+                head = delete_at_pos(head, pos_data);
                 break;
             case 7:
                 head = delete_list(head);
