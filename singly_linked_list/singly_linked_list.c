@@ -119,6 +119,50 @@ node* reverse_list(node* prev, node* cur, node* next) {
     }
 }
 
+node* find_middle_node(node *head) {
+    if(head) {
+        node* ptr1 = head;
+        node* ptr2 = head;
+        int flag = 0;
+        while(ptr2->next!=NULL) {
+            if(flag==0) {
+                ptr2 = ptr2->next;
+                flag = 1;
+            } else {
+                ptr1 = ptr1->next;
+                ptr2 = ptr2->next;
+                flag = 0;
+            }
+        }
+        return ptr1;
+    } else {
+        printf("The list is empty!\n");
+        return NULL;
+    }
+    
+}
+
+int get_length(node *head) {
+    node* temp = head;
+    int counter = 0;
+    while(temp) {
+        temp=temp->next;
+        counter++;
+    }
+    return counter;
+}
+
+int is_length_even(node* head) {
+    node* ptr = head;
+    while(ptr && ptr->next) {
+        ptr = ptr->next->next;
+    }
+    if(ptr)
+        return 0;
+    else
+        return 1;
+}
+
 void display(node* head){
     node* temp = head;
     while(temp){
@@ -126,6 +170,13 @@ void display(node* head){
         temp = temp->next;
     }
     printf("NULL\n");
+}
+
+void display_reverse(node *head) {
+    if(!head)
+        return;
+    display_reverse(head->next);
+    printf("%d --> ", head->data);
 }
 
 

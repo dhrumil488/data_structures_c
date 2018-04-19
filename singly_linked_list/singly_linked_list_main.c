@@ -3,6 +3,7 @@
 int main() {
     int choise, data, pos_data;
     node* head = NULL;
+    node* temp = NULL;
     printf("-----------Singly Linked List---------------\n");
     while(1) {
         printf("\n Main Menu\n");
@@ -15,8 +16,12 @@ int main() {
         printf("7. Delete whole linked list\n");
         printf("8. Sort the linked list\n");
         printf("9. Reverse the linked list\n");
-        printf("10. Display the linked list\n");
-        printf("11. Exit\n");
+        printf("10. Find middle node's pointer and value of linked list.\n");
+        printf("11. Get the length of linked list.\n");
+        printf("12. Find the length of the linked list is even or odd.\n");
+        printf("13. Display the linked list\n");
+        printf("14. Display the linked list in reverse order\n");
+        printf("15. Exit\n");
         printf("Enter the choise:");
         scanf("%d", &choise);
 
@@ -56,19 +61,38 @@ int main() {
                 break;
             case 9:
                 if(head) {
-                    
                     head = reverse_list(NULL, head, head->next);
-                    
-                
-                    
                 } else {
                     printf("List is empty!\n");
                 }
                 break;
             case 10:
-                display(head);
+                temp = find_middle_node(head);
+                if(temp) {
+                    printf("Middle Node Address: %p\n", temp);
+                    printf("Middle Node value: %d\n", temp->data);
+                } else {
+                    printf("Can not find the middle element!\n");
+                }
                 break;
             case 11:
+                printf("The length of the linked list is: %d\n", get_length(head));
+                break;
+            case 12:
+                if(is_length_even(head)){
+                    printf("The length of the linked list is EVEN.\n");
+                } else {
+                    printf("The length of the linked list is ODD.\n");
+                }
+                break;
+            case 13:
+                display(head);
+                break;
+            case 14:
+                display_reverse(head);
+                printf("NULL\n");
+                break;
+            case 15:
                 exit(0);
                 break;
         }
