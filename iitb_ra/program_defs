@@ -1,0 +1,203 @@
+This year IITB decided to completely change the pattern. There was no written test (objective test). There was only 2 hours programming test. They extended the time by around 15-20 minutes during the coding test. So the total time was around 2 hours and 15 minutes.
+
+There were 6 questions - 2 questions of 5 marks, 2 questions of 10 marks and 2 questions of 20 marks. The programming language allowed were C/C++. It was on a homegrown platform. They provided systems with Ubuntu. Editor was gedit. Basic instructions were provided on how to use the platform and to compile and submit the code.
+
+ 
+
+These were the questions - 
+
+ 
+
+1) Election (5 marks)
+
+ 
+
+There are N number of people who are voting for leaders who are represented by numbers ranging from 1 to 100. So basically the input was like this:
+
+Example input -
+
+5
+3
+3
+1
+2
+10
+Output -
+
+3
+Here N is 5 (first line). Then the next five lines is the number of a particular leader. The output should be the leader with maximum number of votes.
+
+ 
+
+2) Salary increment (5 marks)
+
+ 
+
+I did not attempt this one so I don't remember the exact question. First line of the input was the number of lines to follow, say N. Then N lines following it in the following form - employee id, boss id, salary. After that the employee id of the employee whose salary has to be incremented is provided. I am not sure if the increment was provided with the input or if it was fixed. Let as assume that it was provided with the input.
+
+ 
+
+This is an example input - 
+
+3
+
+100 200 10000
+200 300 15000
+400 800 5000
+100 10000
+ 
+
+Here employee id 100 has a boss whose id is 200 and employee id 100 has a salary of 10000. The constraint was if the salary of the employee increases the salary of the boss, then the salary of the boss has to be incremented by the same amount. So this will have a cascading effect where multiple employee's salary will have to be incremented.
+
+ 
+
+3) Remove duplicates (10 marks)
+
+ 
+
+In this problem, duplicate characters had to be removed (or compressed into single character). If there was any other character than a-z, "error" should be appended to the end after removing duplicates and invalid characters.
+
+ 
+
+Single line was provided in the input. For example -
+
+ 
+
+Input -
+
+xxxyyyyyy
+Output -
+
+xy
+ 
+
+Another input example -
+
+Input - 
+
+xxxxx1yy23
+Output -
+
+xy error
+ 
+
+4) Reverse word in sentence (10 marks)
+
+ 
+
+Given a string, reverse only the words in the string. Fist line of the input were number of inputs, say N. Then N inputs were on the next N lines.
+
+ 
+
+Example input - 
+
+3
+this is a test
+foo bar
+i love CS
+ 
+
+Output -
+
+siht si a tset
+oof rab
+i evol SC
+ 
+
+5) Line intersection (20 marks)
+
+ 
+
+x, y coordinates of two line segments were provided. Output should be 1 if they intersect, otherwise 0. There were 4 lines in the input. First two lines were x and y coordinates of the fist line's end points. Third and fourth line were the coordinates of the end points of the second line segment.
+
+ 
+
+Sample input - 
+
+1 2
+4 6
+-3 5
+10 12
+ 
+
+6) Graph (20 marks)
+
+ 
+
+In this problem, we had to remove all the nodes whose degree is greater than k. The value of k will be provided with the input. If a node has a degree greater than or equal to k, the node will be removed and all of its edges will be removed as well. The output should be the number of edges remaining in the graph after all the edges from the nodes of degree >= k is removed. The graph is an undirected graph. Self edges were allowed.
+
+ 
+
+Sample input - 
+
+5
+1 2
+2 3
+2 5
+4 4
+5 6
+2
+ 
+
+First line is N, the number of edges. It is 5 in this sample input. Then N number of edges. In the end, the value of k which is 2 here. In this sample input, only node 2 and 5 have degree greater than or equal to 2. So we have to remove edges (2,3), (2,5), and (5,6). Therefore output would be - 2
+
+ 
+
+ 
+
+After the coding test, I think 67 students were shortlisted. The number of positions available for RA were 28. I have listed the groups with the relevant skills. For most of the groups, they are not compulsory, but having those under your belt would certainly help you. Each group will give a presentation after you have been shortlisted. Then you will have to fill a form where you will order these groups according to your preference. This year a student was allowed to interview with exactly 2 reasearch groups. Depending on the results of programming test, the groups were allotted. So if you did well in the programming test, you will likely get your first two preferences.
+
+ 
+
+These groups had RA positions available this year -
+
+ 
+
+1) CSE SysAd (~5 positions)
+
+Unix, Computer Networking
+ 
+
+2) CC SysAd (~2-3 positions)
+
+Unix, Computer Networking
+ 
+
+3) Asynchronous Helpline (not sure about the number of positions. Probably 2)
+
+Prof Kameswari Chebrolu
+Relevant skills: Django/Python, Android
+ 
+
+4) Center for Formal Design and Verification (3 positions)
+
+Prof. Shetal Shah, Prof. Hrishikesh Karmarkar
+Relevant skills: C, C++, Boost C++, OpenMPI
+ 
+
+5) NVLI (5 positions)
+
+Prof. Deepak B Phatak
+Relevant skills: Ubuntu, OpenVstorage, Open_edX, Python, Django, Hadoop+, R etc
+ 
+
+6) eYantra (2 positions)
+
+Prof. Kavi Arya
+Relevant skills: Machine learning
+ 
+
+7) CFILT Lab (1 position)
+
+Prof. Preethi Jyoti
+Relevant skills: ML, NLP, CV
+ 
+
+8) Information Security Research and Development (4 positions)
+
+     
+
+9) Smart Energy Informatics Lab (again not sure about the number of positions (Probably 2)
+
+Prof. Krithi Ramamritham
+Relevant skills: SQL, JS charting library
