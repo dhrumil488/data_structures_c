@@ -32,6 +32,14 @@ int main() {
     // Displaying string
     cout << "The string after pop_back operation is : ";
     cout << str << endl;
+
+    //displaying string char by char
+    cout << "displaying string char by char:" << endl;
+    for(int i=0;i<str.size();i++) {
+        cout << str[i];
+    }
+
+    cout << endl;
  
     return 0;
 }
