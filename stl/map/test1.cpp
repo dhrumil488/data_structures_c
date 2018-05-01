@@ -29,6 +29,7 @@ int main() {
     itr = m.find('j');
     cout << "Finding the value of J:" << endl;
     cout << (*itr).second << endl;
+    cout << "Finding the value of J: " << m['k'] << endl; 
 
 
     return 0;
